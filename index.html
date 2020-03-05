@@ -7,27 +7,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="container">
+    <!-- Dark Mode Switch -->
     <div class="theme-switch-wrapper">
         <label class="theme-switch" for="checkbox">
-     <input type="checkbox" id="checkbox" />
-     <div class="slider round"></div>
-   </label>
-     <em>Enable Dark Mode!</em>
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
    </div>
-
-    <nav>
+   <!-- Navigation -->
+    <nav id="nav">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
-
+    <!-- Home Section -->
     <section id="home">
-        <h1>Custom Title Here</h1>
+        <div class="title-group">
+            <h1>Custom Title Here</h1>
+            <h2>Welcome to your website!</h2>
+        </div>
     </section>
-    <section id="about"></section>
-    <section id="projects"></section>
+    <!-- About Section -->
+    <section id="about">
+        <div class="image-container">
+            <div id="image1">
+                <h2>Web Innovation</h2>
+                <img src="img/undraw_proud_coder_light.svg" loading="lazy" />
+            </div>
+            <div id="image2">
+                <h2>Problem Solving</h2>
+                <img src="img/undraw_feeling_proud_light.svg" loading="lazy" />              
+            </div>
+            <div id="image3">
+                <h2>High Concept</h2>
+                <img src="img/undraw_conceptual_idea_light.svg" loading="lazy" />
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects">
+
+    </section>
+    <!-- Contact Section -->
     <section id="contact">
         <div class="social-icons">
             <i class="fab fa-github"></i>
@@ -38,23 +65,7 @@
             <i class="fab fa-youtube"></i>
         </div>
     </section>
-
-
-    <!-- <nav>
-
-      
-      </nav>  
-      <section>
-          <article class="post">
-            <h1>The Principles of Good Design</h1>
-            <p class="post-meta">Circa 2014 <span>by</span> Ian Daniel Stewart</p>
-      
-            <p>Is <strong>beauty</strong> objectively true? Are there principles you can use to guide you to it in your work? Can designers from both the sciences and the arts look at each others work and find <strong class="sevenhundred">beauty</strong>? These are important questions for all designers.</p>
-      
-            <p>For those of us who design things … we need to be able to recognize it. We need good taste to make good things. Instead of treating <strong class="eighthundred">beauty</strong> as an airy abstraction, to be either blathered about or avoided depending on how one feels about airy abstractions, let’s try considering it as a practical question: how do you make good stuff?</p>
-       <a href="#">Read More</a>
-        </article>
-      </section> -->
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
